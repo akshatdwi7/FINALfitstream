@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heart } from 'lucide-react';
+import React from "react";
+import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,12 +9,18 @@ const Footer = () => {
           <div className="flex items-center space-x-1 mb-4 md:mb-0">
             <span>Made with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
-            <span>by FitStream</span>
+            <span>by Akshat </span>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-600 hover:text-purple-600">Terms</a>
-            <a href="#" className="text-gray-600 hover:text-purple-600">Privacy</a>
-            <a href="#" className="text-gray-600 hover:text-purple-600">Guidelines</a>
+            <a href="#" className="text-gray-600 hover:text-purple-600">
+              Terms
+            </a>
+            <a href="#" className="text-gray-600 hover:text-purple-600">
+              Privacy
+            </a>
+            <a href="#" className="text-gray-600 hover:text-purple-600">
+              Guidelines
+            </a>
           </div>
         </div>
       </div>
