@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X, Dumbbell } from 'lucide-react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Menu, X, Dumbbell } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,25 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-600 hover:text-purple-600">Home</Link>
-            <Link to="/about" className="text-gray-600 hover:text-purple-600">About</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-purple-600">Contact</Link>
-            <Link to="/join" className="text-gray-600 hover:text-purple-600">Join Stream</Link>
-            <Link to="/go-live" className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
+            <Link to="/" className="text-gray-600 hover:text-purple-600">
+              Home
+            </Link>
+            <Link to="/blog" className="text-gray-600 hover:text-purple-600">
+              Blog
+            </Link>
+            <Link to="/about" className="text-gray-600 hover:text-purple-600">
+              About
+            </Link>
+            <Link to="/contact" className="text-gray-600 hover:text-purple-600">
+              Contact
+            </Link>
+            <Link to="/join" className="text-gray-600 hover:text-purple-600">
+              Join Stream
+            </Link>
+            <Link
+              to="/go-live"
+              className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700"
+            >
               Go Live
             </Link>
           </div>
@@ -33,7 +47,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-purple-600"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -48,6 +66,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Home
+              </Link>
+              <Link
+                to="/blog"
+                className="block px-3 py-2 text-gray-600 hover:text-purple-600"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
               </Link>
               <Link
                 to="/about"
